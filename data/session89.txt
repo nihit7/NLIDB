@@ -1,0 +1,23 @@
+Session No. 89 
+
+database.txt 
+Start Time  -> Wed Apr 10 18:29:40 2013
+  
+
+
+
+
+ 1. Query: give books written by author ghuji .                                             Could you rephrase that?                                                                              Faliure! NLPError : syntax error, unexpected INPUT, expecting TABLE or FIELD 
+
+
+
+STATISTICS
+Total queries fired -> 1
+Success             -> 0
+Correct results     -> 0
+Incorrect reults    -> 0
+Failures            -> 1
+
+Success Rate        -> 0%   
+End Time            -> Wed Apr 10 18:29:40 2013
+  

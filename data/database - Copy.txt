@@ -1,0 +1,30 @@
+<table>book
+	<alias>library
+	<column>bookid
+	<column>title
+		<alias>bookname
+	<column>author
+	    <alias>poet
+		<alias>writer
+		<alias>wrote
+	<column>secondauthor
+	<alias>coauthor
+	<column>genre
+	<column>pages
+		<alias>thickness
+	<column>publisher
+		<alias>printer
+<table>customer
+	<column>customerid
+	<column>name
+		<alias>customername
+		<alias>issued
+		<alias>issuer
+	<column>bookid
+	<column>address
+	<column>phone
+<table>issue
+	<column>issueid
+	<column>bookid
+	<column>customerid
+	<column>date  

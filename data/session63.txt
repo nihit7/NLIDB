@@ -1,0 +1,23 @@
+Session No. 63 
+
+database.txt 
+Start Time  -> Tue Apr 09 16:57:15 2013
+  
+
+
+
+
+ 1. Query: who kissuad the title hamlet?                                                    Could you rephrase that?                                                                              Faliure! NLPError : syntax error, unexpected INPUT, expecting TABLE or FIELD 
+
+
+
+STATISTICS
+Total queries fired -> 1
+Success             -> 0
+Correct results     -> 0
+Incorrect reults    -> 0
+Failures            -> 1
+
+Success Rate        -> 0%   
+End Time            -> Tue Apr 09 16:57:15 2013
+  

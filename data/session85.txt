@@ -1,0 +1,61 @@
+Session No. 85 
+
+database.txt 
+Start Time  -> Wed Apr 10 12:22:47 2013
+  
+
+
+
+
+ 1. Query: give me every book.                                                              SELECT * FROM book                                                                                    Success with rule : query TABLE
+ 2. Query: what are the name of our customer .                                              SELECT name  FROM customer                                                                            Success with rule : query FIELD TABLE
+ 3. Query: give me customer's name .                                                        SELECT name  FROM customer                                                                            Success with rule : query TABLE FIELD
+ 4. Query: give me name and address of customer .                                           SELECT name ,address FROM customer                                                                    Success with rule : 	query  FIELD WORDQ FIELD TABLE
+ 5. Query: list us date and name of customer name pqrst.                                    SELECT issue.date , customer.name FROM issue,customer WHERE issue.customerid = customer.customerid AND customer.name  = pqrst  Success with rule :query FIELD WORDQ FIELD TABLE FIELD condition
+ 6. Query: fetch all book's title, pages.                                                   SELECT title ,pages FROM book                                                                         Success with rule : 	query TABLE FIELD WORDQ FIELD
+ 7. Query: fetch all book's title, address.                                                 SELECT book.title , customer.address FROM book , customer  WHERE book.bookid = customer.bookid        Success with rule :	query TABLE FIELD WORDQ FIELD (join)
+ 8. Query: fetch all book whose author is xyz .                                             SELECT  * FROM book WHERE author = xyz                                                                Success with rule :	 query TABLE FIELD condition (join)
+ 9. Query: fetch all book whose name is xyz .                                               SELECT * FROM book,customer WHERE book.bookid = customer.bookid AND customer.name  = xyz              Success with rule :	 query TABLE FIELD condition (join)
+10. Query: fetch all title of book whose author is asdffivej .                              SELECT  title FROM book WHERE author = asdffivej                                                      Success with rule :	 query FIELD TABLE FIELD condition (join)
+11. Query: fetch all date of book whose author is asdfiveaj .                               SELECT issue.date FROM issue,book WHERE issue.bookid = book.bookid AND book.author  = asdfiveaj       Success with rule :	 query FIELD TABLE FIELD condition (join)
+12. Query: fetch all book's pages whose author is fecrfvc .                                 SELECT  pages FROM book WHERE author = fecrfvc                                                        Success with rule :	 query TABLE FIELD FIELD condition(join)
+13. Query: fetch all book's pages whose name is fecrfvc .                                   SELECT book.pages FROM book,customer WHERE book.bookid = customer.bookid AND customer.name  = fecrfvc  Success with rule :	 query TABLE FIELD FIELD condition(join)
+14. Query: fetch all title and publisher of book whose author is qwerty .                   SELECT  title,publisher  FROM book WHERE author = qwerty                                              Success with rule :query FIELD WORDQ FIELD TABLE FIELD condition
+15. Query: fetch all title and publisher of book whose name is less than qwerty .           SELECT book.title , book.publisher FROM book,customer WHERE book.bookid = customer.bookid AND customer.name  < qwerty  Success with rule :query FIELD WORDQ FIELD TABLE FIELD condition
+16. Query: fetch all title and address of book whose name is less than qwerty .             SELECT book.title , customer.address FROM book,customer WHERE book.bookid = customer.bookid AND customer.name  < qwerty  Success with rule :query FIELD WORDQ FIELD TABLE FIELD condition
+17. Query: fetch all name and publisher of book whose name is less than qwerty .            SELECT customer.name , book.publisher FROM book,customer WHERE book.bookid = customer.bookid AND customer.name  < qwerty  Success with rule :query FIELD WORDQ FIELD TABLE FIELD condition
+18. Query: fetch all book's pages, genre whose author is xyz .                              SELECT  pages,genre  FROM book WHERE author = xyz                                                     Success with rule :	query TABLE FIELD WORDQ FIELD FIELD condition 
+19. Query: count customer we have .                                                         SELECT COUNT(*) FROM customer                                                                         Success with rule :	 ask_count TABLE ENQUIRE 
+20. Query: what number of book ?                                                            SELECT COUNT(*) FROM book                                                                             Success with rule :	 ask_count TABLE 
+21. Query: give me the customer's count .                                                   SELECT COUNT(*) FROM customer                                                                         Success with rule :	 query TABLE MOJ 
+22. Query: how many customer by the name of nihit do we have?                               SELECT COUNT(*) FROM customer WHERE name = nihit                                                      Success with rule :	 ask_count TABLE  FIELD  INPUT ENQUIRE
+23. Query: how many customer  whose name is agrawal ?                                       SELECT COUNT(*) FROM customer WHERE name  = agrawal                                                   Success with rule :	 	ask_count TABLE  FIELD condition
+24. Query: how many customer  whose title is awal ?                                         SELECT COUNT(*) FROM customer,book WHERE customer.bookid = book.bookid AND book.title = awal          Success with rule :	 	ask_count TABLE  FIELD condition
+25. Query: count the number of customer do we have whose name is qwe?                       SELECT COUNT(*) FROM customer WHERE name  = qwe                                                       Success with rule :	 ask_count TABLE  ENQUIRE FIELD condition
+26. Query: count the number of customer do we have whose genre is qwe?                      SELECT COUNT(*) FROM customer,book WHERE customer.bookid = book.bookid AND book.genre = qwe           Success with rule :	 ask_count TABLE  ENQUIRE FIELD condition
+27. Query: how many customer whose address is cxgfadgfcg.                                   SELECT COUNT(*) FROM customer WHERE address  = cxgfadgfcg                                             Success with rule :	 	ask_count TABLE  FIELD condition
+28. Query: fetch all title and printer of book whose author is less than qwerty .           SELECT  title,publisher  FROM book WHERE author < qwerty                                              Success with rule :query FIELD WORDQ FIELD TABLE FIELD condition
+29. Query: fetch all book's pages, genre whose pages is in range of 500 and 1000 .          SELECT  pages,genre  FROM book WHERE pages BETWEEN 500 AND 1000                                       Success with rule :	query TABLE FIELD WORDQ FIELD FIELD condition 
+30. Query: give me the author of the book with title xyz.                                   SELECT  author FROM book WHERE title = xyz                                                            Success with rule :	 query FIELD TABLE FIELD condition (join)
+31. Query: what is the name of the author of the book title Astronomy?                      SELECT  author FROM book WHERE title = Astronomy                                                      Success with rule :	 query FIELD TABLE FIELD condition (join)
+32. Query: who wrote the book with bookname QWERTY?                                         SELECT  author FROM book WHERE title = QWERTY                                                         Success with rule :	 query FIELD TABLE FIELD condition (join)
+33. Query: fetch the library.                                                               SELECT * FROM book                                                                                    Success with rule : query TABLE
+34. Query: give me the customer's count.                                                    SELECT COUNT(*) FROM customer                                                                         Success with rule :	 query TABLE MOJ 
+35. Query: give me name of book.                                                            SELECT customer.name  FROM book,customer WHERE book.bookid = customer.bookid                          Success with rule : query FIELD TABLE (join)
+36. Query: give me customer's author.                                                       SELECT book.author  FROM customer,book WHERE customer.bookid = book.bookid                            Success with rule : query TABLE FIELD (join)
+37. Query: who wrote the book with address ahbhb                                            Please end the sentence with a punctuation mark                                                       Faliure! NLPError : syntax error, unexpected $end, expecting EOL 
+38. Query: give me the poet of the book with title xyz.                                     SELECT  author FROM book WHERE title = xyz                                                            Success with rule :	 query FIELD TABLE FIELD condition (join)
+
+
+
+STATISTICS
+Total queries fired -> 38
+Success             -> 37
+Correct results     -> 37
+Incorrect reults    -> 0
+Failures            -> 1
+
+Success Rate        -> 97%   
+Correctness         -> 100%  
+End Time            -> Wed Apr 10 12:22:48 2013
+  

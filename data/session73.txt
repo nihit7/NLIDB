@@ -1,0 +1,24 @@
+Session No. 73 
+
+database.txt 
+Start Time  -> Tue Apr 09 17:10:37 2013
+  
+
+
+
+
+ 1. Query: how many issue of the title hamlet?                                              SELECT COUNT(*) FROM issue,book WHERE issue.bookid = book.bookid AND book.title = hamlet              Success with rule :	 	ask_count TABLE  FIELD condition
+
+
+
+STATISTICS
+Total queries fired -> 1
+Success             -> 1
+Correct results     -> 1
+Incorrect reults    -> 0
+Failures            -> 0
+
+Success Rate        -> 100%   
+Correctness         -> 100%  
+End Time            -> Tue Apr 09 17:10:37 2013
+  

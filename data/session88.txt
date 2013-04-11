@@ -1,0 +1,24 @@
+Session No. 88 
+
+database.txt 
+Start Time  -> Wed Apr 10 17:44:39 2013
+  
+
+
+
+
+ 1. Query: give books written by author ghuji .                                             SELECT  author FROM booktable WHERE author = ghuji                                                    Success with rule :	 query TABLE FIELD FIELD condition(join)
+
+
+
+STATISTICS
+Total queries fired -> 1
+Success             -> 1
+Correct results     -> 1
+Incorrect reults    -> 0
+Failures            -> 0
+
+Success Rate        -> 100%   
+Correctness         -> 100%  
+End Time            -> Wed Apr 10 17:44:39 2013
+  

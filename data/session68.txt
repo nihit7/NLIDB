@@ -1,0 +1,24 @@
+Session No. 68 
+
+database.txt 
+Start Time  -> Tue Apr 09 17:01:46 2013
+  
+
+
+
+
+ 1. Query: who issuad the title hamlet?                                                     SELECT customer.name FROM customer,book WHERE customer.bookid = book.bookid AND book.title  = hamlet  Success with rule :	query FIELD FIELD condition(join)
+
+
+
+STATISTICS
+Total queries fired -> 1
+Success             -> 1
+Correct results     -> 1
+Incorrect reults    -> 0
+Failures            -> 0
+
+Success Rate        -> 100%   
+Correctness         -> 100%  
+End Time            -> Tue Apr 09 17:01:46 2013
+  

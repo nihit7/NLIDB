@@ -1,0 +1,38 @@
+give me every book.
+what are the name of our customer .
+give me customer's name .
+give me name and address of customer .
+list us date and name of customer name pqrst.
+fetch all book's title, pages.
+fetch all book's title, address.
+fetch all book whose author is xyz .
+fetch all book whose name is xyz .
+fetch all title of book whose author is asdffivej .
+fetch all date of book whose author is asdfiveaj .
+fetch all book's pages whose author is fecrfvc .
+fetch all book's pages whose name is fecrfvc .
+fetch all title and publisher of book whose author is qwerty .
+fetch all title and publisher of book whose name is less than qwerty .
+fetch all title and address of book whose name is less than qwerty .
+fetch all name and publisher of book whose name is less than qwerty .
+fetch all book's pages, genre whose author is xyz .
+count customer we have .
+what number of book ?
+give me the customer's count .
+how many customer by the name of nihit do we have?
+how many customer  whose name is agrawal ?
+how many customer  whose title is awal ?
+count the number of customer do we have whose name is qwe?
+count the number of customer do we have whose genre is qwe?
+how many customer whose address is cxgfadgfcg.
+fetch all title and printer of book whose author is less than qwerty .
+fetch all book's pages, genre whose pages is in range of 500 and 1000 .
+give me the author of the book with title xyz.
+what is the name of the author of the book title Astronomy?
+who wrote the book with bookname QWERTY?
+fetch the library.
+give me the customer's count.
+give me name of book.
+give me customer's author.
+who wrote the book with address ahbhb
+give me the poet of the book with title xyz.

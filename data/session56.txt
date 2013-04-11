@@ -1,0 +1,24 @@
+Session No. 56 
+
+database.txt 
+Start Time  -> Tue Apr 09 16:49:27 2013
+  
+
+
+
+
+ 1. Query: who coauthor the title hamlet?                                                   SELECT  secondauthor FROM book WHERE title = hamlet                                                   Success with rule :	query FIELD FIELD condition(join)
+
+
+
+STATISTICS
+Total queries fired -> 1
+Success             -> 1
+Correct results     -> 1
+Incorrect reults    -> 0
+Failures            -> 0
+
+Success Rate        -> 100%   
+Correctness         -> 100%  
+End Time            -> Tue Apr 09 16:49:27 2013
+  

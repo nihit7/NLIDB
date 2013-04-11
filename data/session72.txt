@@ -1,0 +1,24 @@
+Session No. 72 
+
+database.txt 
+Start Time  -> Tue Apr 09 17:10:03 2013
+  
+
+
+
+
+ 1. Query: who is the issue of the title hamlet?                                            SELECT * FROM issue,book WHERE issue.bookid = book.bookid AND book.title  = hamlet                    Success with rule :	 query TABLE FIELD condition (join)
+
+
+
+STATISTICS
+Total queries fired -> 1
+Success             -> 1
+Correct results     -> 1
+Incorrect reults    -> 0
+Failures            -> 0
+
+Success Rate        -> 100%   
+Correctness         -> 100%  
+End Time            -> Tue Apr 09 17:10:03 2013
+  
